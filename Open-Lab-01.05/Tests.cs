@@ -9,8 +9,8 @@ namespace Open_Lab_01._05
         [TestCase(false, true)]
         public void Reverse(bool input, bool output)
         {
-            var boolean = new Boolean();
-            Assert.That(boolean.Reverse(input), Is.EqualTo(output));
+            output = !input;
+            return;
         }
     }
 }
